@@ -1,0 +1,45 @@
+!SESSION 2016-01-15 11:00:22.526 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.osgi 4 0 2016-01-15 11:00:25.089
+!MESSAGE Could not start bundle: org.eclipse.equinox.console
+!STACK 0
+org.osgi.framework.BundleException: Could not start bundle: org.eclipse.equinox.console
+	at org.eclipse.osgi.framework.internal.core.ConsoleManager.checkForConsoleBundle(ConsoleManager.java:217)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:298)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+Caused by: org.osgi.framework.BundleException: The bundle "org.eclipse.equinox.console_1.0.100.v20130429-0953 [138]" could not be resolved. Reason: Missing Constraint: Import-Package: org.apache.felix.service.command; version="0.8.0"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1332)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1316)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:323)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.internal.core.ConsoleManager.checkForConsoleBundle(ConsoleManager.java:215)
+	... 9 more
+Root exception:
+org.osgi.framework.BundleException: The bundle "org.eclipse.equinox.console_1.0.100.v20130429-0953 [138]" could not be resolved. Reason: Missing Constraint: Import-Package: org.apache.felix.service.command; version="0.8.0"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1332)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1316)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:323)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.internal.core.ConsoleManager.checkForConsoleBundle(ConsoleManager.java:215)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:298)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
